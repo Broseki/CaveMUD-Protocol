@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package CaveMUD;
+
+message Test {
+  string message_text = 1;
+}
