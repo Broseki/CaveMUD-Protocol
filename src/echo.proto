@@ -2,6 +2,6 @@ syntax = "proto3";
 
 package CaveMUDProto;
 
-message Echo {
+message echo {
   string message_text = 1;
 }
