@@ -7,6 +7,12 @@ if [ -z "$1" ]
         exit 1
 fi
 
+# Remove the generated directory if it exists
+if [ -d "generated" ]
+    then
+        rm -rf generated
+fi
+
 # Create the generated directory if it doesn't exist
 mkdir -p generated
 
