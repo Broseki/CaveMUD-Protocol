@@ -1,0 +1,16 @@
+syntax = "proto3";
+package CaveMUDProto;
+
+enum Result {
+    FAILURE = 0;
+    SUCCESS = 1;
+    BANNED = 2;
+    LOCKED = 3;
+    SERVER_FULL = 4;
+    INCORRECT_PROTOCOL_VERSION = 5;
+    OTHER_FAILURE = 6;
+}
+
+message LoginResponse {
+    Result result = 1;
+}

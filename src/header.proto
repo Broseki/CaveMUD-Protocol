@@ -1,0 +1,15 @@
+syntax = "proto3";
+package CaveMUDProto;
+
+import 'login_request.proto';
+import 'login_response.proto';
+
+message Header {
+    uint32 api_version = 1;
+    uint32 message_id = 2;
+    uint32 message_size = 3;
+    oneof message_body {
+        LoginRequest login_request = 4;
+        LoginResponse login_response = 5;
+    }
+}
